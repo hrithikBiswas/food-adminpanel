@@ -1,0 +1,20 @@
+{
+  "name": "adminpanel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "admin-lte": "3.2",
+    "bootstrap": "^5.3.0-alpha3",
+    "datatables.net-bs5": "^1.13.4",
+    "jquery": "^3.6.4",
+    "sweetalert2": "^11.7.3"
+  }
+}
