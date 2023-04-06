@@ -1,0 +1,111 @@
+@import url('reset.css');
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(207, 207, 207);
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.page-preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background: #6161614a;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-title {
+    font-size: 3.5rem;
+    text-shadow: 6px 4px 7px black;
+    color: #fff4f4 !important;
+    background: #8080801c;
+    text-align: center;
+}
+.error {
+    border: 1px solid red;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.3rem;
+    background-position: right 0.55rem center;
+}
+.item-list {
+    height: 40em;
+}
+.order-items-holder {
+    height: 38em;
+}
+.order-list {
+    height: 18em;
+}
+#order-feild {
+    height: 46rem;
+    overflow: auto;
+}
+/* SWEETALERT2 CUSTOMIZED CSS START */
+.sweet-alert-title {
+    font-size: 18px !important;
+    padding-top: 0px !important;
+}
+.sweet-alert-icon {
+    margin-top: 15px !important;
+}
+/* SWEETALERT2 CUSTOMIZED CSS END */
+
+/* Responsive */
+@media only screen and (max-width: 992px) {
+    .item-list {
+        height: 25em;
+    }
+    .order-items-holder {
+        height: 26em;
+    }
+    .order-items-footer h3 {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .order-items-footer h3 {
+        font-size: 1.65rem !important;
+        margin: 8px 0 !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .menu-list {
+        margin-top: 1rem;
+    }
+    .order-items-holder {
+        height: 24em;
+    }
+    .order-items-footer h3 {
+        font-size: 1.25rem !important;
+        margin: 10px 0;
+    }
+    .order-details {
+        font-size: 14px;
+    }
+    .item-list {
+        height: 17em;
+    }
+    .item-list > p {
+        text-align: center;
+    }
+    .order-list {
+        height: 15em;
+    }
+}
